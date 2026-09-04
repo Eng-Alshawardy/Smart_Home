@@ -25,17 +25,17 @@ void Update_Dashboard(void) {
     if(state_LED1) HLCD_voidDisplayStr((u8*)"LED1:ON ");
     else           HLCD_voidDisplayStr((u8*)"LED1:OFF");
 
-    HLCD_voidMoveCursor(LCD_ROW0, LCD_COL9);
+    HLCD_voidMoveCursor(LCD_ROW1, LCD_COL0);
     if(state_LED2) HLCD_voidDisplayStr((u8*)"LED2:ON ");
     else           HLCD_voidDisplayStr((u8*)"LED2:OFF");
 
-    HLCD_voidMoveCursor(LCD_ROW1, LCD_COL0);
-    if(state_TV)   HLCD_voidDisplayStr((u8*)"TV  :ON ");
-    else           HLCD_voidDisplayStr((u8*)"TV  :OFF");
+    HLCD_voidMoveCursor(LCD_ROW0, LCD_COL9);
+    if(state_TV)   HLCD_voidDisplayStr((u8*)"TV :ON ");
+    else           HLCD_voidDisplayStr((u8*)"TV :OFF");
 
     HLCD_voidMoveCursor(LCD_ROW1, LCD_COL9);
-    if(state_AC)   HLCD_voidDisplayStr((u8*)"AC  :ON ");
-    else           HLCD_voidDisplayStr((u8*)"AC  :OFF");
+    if(state_AC)   HLCD_voidDisplayStr((u8*)"AC :ON ");
+    else           HLCD_voidDisplayStr((u8*)"AC :OFF");
 }
 
 void Buzzer_ClickFeedback(void) {
